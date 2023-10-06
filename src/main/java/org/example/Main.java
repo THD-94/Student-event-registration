@@ -2,6 +2,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DBCommunicator.getConnectionEDB();
+        DBCommunicator.getConnectionUDB();
+
+        Program program = new Program();
+        program.run();
     }
-}
+}1
